@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Ninja a Gato</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+                if($(this).attr('src') == $(this).attr('ninja-src')){
+                    $(this).attr('src', $(this).attr('cat-src'));
+                }else{
+                    $(this).attr('src', $(this).attr('ninja-src'));
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+    <img src="img/ninja0.png" cat-src="img/cat0.png" ninja-src="img/ninja0.png" style="display: flex; flex-direction: column;" width="400px">
+    <img src="img/ninja1.png" cat-src="img/cat1.png" ninja-src="img/ninja1.png" style="display: flex; flex-direction: column;" width="400px">
+    <img src="img/ninja2.png" cat-src="img/cat2.png" ninja-src="img/ninja2.png" style="display: flex; flex-direction: column;" width="400px">
+    <img src="img/ninja3.png" cat-src="img/cat3.png" ninja-src="img/ninja3.png" style="display: flex; flex-direction: column;" width="400px">
+    <img src="img/ninja4.png" cat-src="img/cat4.png" ninja-src="img/ninja4.png" style="display: flex; flex-direction: column;" width="400px">
+</body>
+</html>
